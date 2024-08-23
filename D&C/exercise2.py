@@ -1,3 +1,6 @@
+import unittest
+
+
 def _unit_test(arr, low, high):
     if low > high:
         return -1
@@ -18,13 +21,13 @@ def _unit_test(arr, low, high):
 def unit_test(arr):
     return _unit_test(arr, 0, len(arr)-1)
 
+class TestUnitTest(unittest.TestCase):
+
+    def test(self):
+        self.assertEqual(unit_test([1, 1, 0, 0, 0]), 2)
+        self.assertEqual(unit_test([0, 0, 0, 0, 0]), 0)
+        self.assertEqual(unit_test([1, 1, 1, 1, 1]), -1)
 
 
-arr = [1, 1, 0, 0, 0] 
-print(unit_test(arr))
-
-arr = [0, 0, 0, 0, 0]
-print(unit_test(arr))
-
-arr = [1, 1, 1, 1, 1]
-print(unit_test(arr))
+if __name__ == '__main__':
+    unittest.main()
