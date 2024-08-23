@@ -19,7 +19,7 @@ def peak_position(arr):
     return _peak_position(arr, 0, len(arr)-1)
 
 
-class TestIntegerSquareRoot(unittest.TestCase):
+class TestPeakPosition(unittest.TestCase):
 
     def test(self):
         self.assertEqual(peak_position([1, 5, 0]), 1)
