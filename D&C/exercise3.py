@@ -21,7 +21,6 @@ def integer_square_root(n):
     return _integer_square_root(n, 0, n)
     
 
-
 class TestIntegerSquareRoot(unittest.TestCase):
 
     def test(self):
@@ -30,6 +29,7 @@ class TestIntegerSquareRoot(unittest.TestCase):
         self.assertEqual(integer_square_root(17), 4)
         self.assertEqual(integer_square_root(1), 1)
         self.assertEqual(integer_square_root(0), 0)
+
 
 if __name__ == '__main__':
     unittest.main()
