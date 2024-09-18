@@ -21,6 +21,9 @@ class KaratsubaTest(unittest.TestCase):
     def test(self):
         self.assertEqual(karatsuba(1234, 5678), 7006652)
         self.assertEqual(karatsuba(10000, 10000), 100000000)
+        self.assertEqual(karatsuba(1000, 10000), 10000000)
+        self.assertEqual(karatsuba(1000, 10000), 10000000)
+        self.assertEqual(karatsuba(2546, 39999), 101837454)
 
 
 
