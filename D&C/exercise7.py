@@ -16,10 +16,8 @@ def brute_force_closest_points(points):
     return pair
 
 def closest_points(points):
-    px = points.copy()
-    py = points.copy()
-    px.sort(key=lambda p: p[0]) # O(n log n)
-    py.sort(key=lambda p: p[1]) # O(n log n)
+    px = sorted(points, key=lambda x: x[0])
+    py = sorted(points, key=lambda x: x[1])
     [x, y] = _closest_points(px, py)
     print(dist(x,y))
     return [x, y]
