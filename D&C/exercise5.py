@@ -34,7 +34,7 @@ def merge(left, rigth):
     return result
 
 
-class TestPeakPosition(unittest.TestCase):
+class MerseSortTest(unittest.TestCase):
 
     def test(self):
         self.assertEqual(merge_sort([]), [])
